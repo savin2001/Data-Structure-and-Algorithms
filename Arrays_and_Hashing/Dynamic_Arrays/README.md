@@ -28,7 +28,7 @@ Dynamic arrays are an extension of static arrays, offering more flexibility. Unl
    - Overhead: Extra memory is required to handle resizing.
    - Copying: Resizing involves copying elements, which can be costly in terms of time and memory.
 
-### Example in Python:
+### Example in Python
 
 Python’s `list` is an example of a dynamic array. Here’s how it works:
 
@@ -49,6 +49,29 @@ print(arr[0])  # Output: 1
 # Removing elements
 arr.pop()  # Removes the last element
 print(arr)  # Output: [1, 2]
+```
+
+### Example in JavaScript
+
+Here’s how it works for JS:
+
+```javascript
+// Initializing a empty array
+let arr = [];
+
+// Adding elements (the array automatically resizes as needed)
+arr.push(1);
+arr.push(2);
+arr.push(3);
+
+console.log(arr);  // Output: [1, 2, 3]
+
+// Accessing elements
+console.log(arr[0]);  // Output: 1
+
+// Removing elements
+arr.pop();  // Removes the last element
+console.log(arr);  // Output: [1, 2]
 ```
 
 Here’s what happens under the hood:
