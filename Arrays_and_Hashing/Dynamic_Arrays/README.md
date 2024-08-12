@@ -76,4 +76,4 @@ console.log(arr);  // Output: [1, 2]
 
 Here’s what happens under the hood:
 
-- When you append an element and the list is at capacity, Python creates a new list with more space, copies the elements from the old list, and then appends the new element.
+- When you append or push an element and the list or array is at capacity, the program creates a new array with more space, copies the elements from the old array, and then appends the new element.
