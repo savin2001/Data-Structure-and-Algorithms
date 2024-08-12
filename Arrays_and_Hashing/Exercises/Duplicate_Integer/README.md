@@ -4,8 +4,8 @@ Given an integer array nums, return true if any value appears more than once in 
 
 ## Example 1
 
-```python
-Input: nums = [1, 2, 3, 3]
+```javascript
+Input: let nums = [1, 2, 3, 3]
 
 Output: true
 ```
@@ -38,12 +38,52 @@ Output: false
 
 Here is the code to check if the array has any element that appears more that once.
 
+### 2.2 Sorting Array
+
+Here is solution:
+
 ```python
 
 
 ```
 
 ```javascript
+    // JavaScript
+    class Solution {
+        /**
+         * @param {number[]} nums
+         * @return {boolean}
+         */
+    
+        hasDuplicate(nums) {
+            // Check if the array is empty or has only 1 element
+            if (nums.length <= 1) {
+                return false;
+            }
+        
+            // Sort the array
+            let newArray = nums.sort((a, b) => a - b);
+
+            // Loop through the array to get the elements
+            for (let i = 0; i < newArray.length - 1; i++) {
+                // Compare if the adjacent values of the array are equal
+                if (newArray[i] === newArray[i + 1]) {
+                    return true; // Duplicate found
+                }
+            }
+
+            // No duplicates found
+            return false;
+        }
+    }
+
+    // Example:
+    let solution = new Solution();
+    let numbers = [1, 2, 3, 4];
+    console.log(solution.hasDuplicate(numbers)); // The expected output: false
+
+    numbers = [1, 2, 3, 1];
+    console.log(solution.hasDuplicate(numbers)); // The expected output: true
 
 
 ```
