@@ -30,7 +30,7 @@ Output: false
   Not very efficient.
   - Sorting an array: Sort an array into an order e.g. ascending to descending. `Time complexity > O (n log n).` \
   Checking for duplicates. `Time complexity > O(n).` More efficient than brute force.
-  - Using Hash Set: Iterate through the array ans store each element within a hash set. \
+  - Using Hash Set: Iterate through the array and store each element within a hash set. \
   If you encounter an element that’s already in the set, you know there’s a duplicate. `Time complexity > O(n)` \
   Most efficient. `I am yet to learn this method (12-Aug-2024)`
 
@@ -38,7 +38,7 @@ Output: false
 
 Here is the code to check if the array has any element that appears more that once.
 
-### 2.2 Sorting Array
+#### 2.2 Sorting Array
 
 Here is solution:
 
