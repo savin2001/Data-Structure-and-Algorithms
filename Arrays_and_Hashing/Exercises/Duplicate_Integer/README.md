@@ -50,6 +50,9 @@ var containsDuplicate = function(nums) {
     // it means there were duplicates in the array.
     return new Set(nums).size !== nums.length;
 };
+
+const numbers = [1, 2, 3, 4, 5, 1];
+console.log(containsDuplicate(numbers)); // Output: true
 ```
 ```python
 
