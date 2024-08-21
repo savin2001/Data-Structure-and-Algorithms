@@ -32,21 +32,31 @@ Output: false
   Checking for duplicates. `Time complexity > O(n).` More efficient than brute force.
   - Using Hash Set: Iterate through the array and store each element within a hash set. \
   If you encounter an element that’s already in the set, you know there’s a duplicate. `Time complexity > O(n)` \
-  Most efficient. `I am yet to learn this method (12-Aug-2024)`
+  Most efficient. `I am yet to learn this method (12-Aug-2024)` > `Finally learnt this method (21-Aug-2024)` 
 
 ### 2. Code Block
 
 Here is the code to check if the array has any element that appears more that once.
 
-#### 2.2 Sorting Array
+#### 2.1 Using Hash Set
 
 Here is solution:
-
+```javascript
+var containsDuplicate = function(nums) {
+    // Convert the array into a Set, which automatically removes any duplicates.
+    // Check if the size of the Set (number of unique elements) is not equal to 
+    // the total number of elements in the original array. If they are not equal, 
+    // it means there were duplicates in the array.
+    return new Set(nums).size !== nums.length;
+};
+```
 ```python
-
 
 ```
 
+#### 2.2 Sorting Array
+
+Here is solution:
 ```javascript
     // JavaScript
     class Solution {
@@ -85,5 +95,7 @@ Here is solution:
     numbers = [1, 2, 3, 1];
     console.log(solution.hasDuplicate(numbers)); // The expected output: true
 
+```
+```python
 
 ```
