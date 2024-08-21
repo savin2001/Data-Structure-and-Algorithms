@@ -42,6 +42,7 @@ Here is the code to check if the array has any element that appears more that on
 
 Here is solution:
 ```javascript
+// JavaScript
 var containsDuplicate = function(nums) {
     // Convert the array into a Set, which automatically removes any duplicates.
     // Check if the size of the Set (number of unique elements) is not equal to 
