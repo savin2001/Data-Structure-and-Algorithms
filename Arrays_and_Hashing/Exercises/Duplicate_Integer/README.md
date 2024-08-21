@@ -51,6 +51,17 @@ var containsDuplicate = function(nums) {
     return new Set(nums).size !== nums.length;
 };
 
+// OR
+
+var containsDuplicate = function(nums) {
+    const seen = new Set();
+    for (const num of nums) {
+        if (seen.has(num)) return true; // Duplicate found
+        seen.add(num);
+    }
+    return false;
+};
+
 const numbers = [1, 2, 3, 4, 5, 1];
 console.log(containsDuplicate(numbers)); // Output: true
 ```
